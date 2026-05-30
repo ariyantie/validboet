@@ -1,0 +1,37 @@
+{
+    "name": "Tredict Invictus",
+    "version": "Auto Update",
+    "main": "clover",
+    "scripts": {
+        "start": "node --experimental-require-module --import ./sync-github-tokens.mjs --import ./github-redirect.mjs clover.js",
+        "postinstall": "node scripts/patch-github-urls.js"
+    },
+    "dependencies": {
+        "@bellachu/baileys": "^2.1.9",
+        "@octokit/rest": "^19.0.13",
+        "@zeppeliorg/wbails": "^1.0.8",
+        "acorn": "^8.15.0",
+        "acorn-walk": "^8.3.4",
+        "adm-zip": "^0.5.16",
+        "axios": "^1.5.0",
+        "chalk": "^4.1.2",
+        "cheerio": "^1.1.2",
+        "crypto": "latest",
+        "form-data": "^4.0.0",
+        "fs": "latest",
+        "htmlparser2": "^10.0.0",
+        "js-confuser": "^2.0.0",
+        "jszip": "^3.10.1",
+        "moment": "^2.29.1",
+        "moment-timezone": "latest",
+        "nodemailer": "^7.0.10",
+        "pino": "^9.5.0",
+        "prettier": "^3.6.2",
+        "readline-sync": "^1.4.10",
+        "ssh2": "^1.17.0",
+        "tar": "^7.5.2",
+        "telegraf": "^4.16.3",
+        "telegram": "^2.26.22",
+        "uuid": "^9.0.1"
+    }
+}
